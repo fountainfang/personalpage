@@ -380,6 +380,21 @@
             color: var(--secondary);
         }
 
+        .project-link {
+            display: inline-block;
+            align-self: flex-start;
+            font-size: 0.75rem;
+            color: var(--primary);
+            text-decoration: none;
+            margin: -0.4rem 0 1rem;
+            border-bottom: 1px dashed var(--primary);
+        }
+
+        .project-link:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
         /* Timeline / Experience */
         .timeline {
             position: relative;
@@ -636,7 +651,7 @@
                         <div class="card-corner card-bl"></div>
                         <div class="card-corner card-br"></div>
                         <span class="stat-label">TOTAL PROJECTS</span>
-                        <span class="stat-value">04</span>
+                        <span class="stat-value">05</span>
                         <div style="height:4px; background:var(--bg-dark); width:100%">
                             <div style="height:100%; width:100%; background:var(--primary)"></div>
                         </div>
@@ -683,11 +698,12 @@
                     <div class="card-corner card-tl"></div>
                     <div class="card-corner card-tr"></div>
                     <div class="timeline-item" style="margin: 0; padding-bottom: 0;">
-                        <span class="timeline-date">JAN 2026</span>
-                        <div class="timeline-title">Teaching Assistant - ECE 222</div>
-                        <div class="timeline-company">University of Waterloo</div>
-                        <p style="color: var(--text-dim); font-size: 0.9rem;">Facilitating laboratory sessions for
-                            Digital Computers course. Instructing on RISC-V assembly and hardware debugging.</p>
+                        <span class="timeline-date">MAY 2026 – AUG 2026</span>
+                        <div class="timeline-title">FINCAPES Flood &amp; Fire Early Warning System</div>
+                        <div class="timeline-company">University of Waterloo / IPB University</div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;">Built a full-stack IoT early-warning
+                            platform for flood and forest-fire monitoring across Indonesian field sites, including
+                            telemetry ingestion, GIS dashboards, and role-based operations.</p>
                     </div>
                 </div>
             </section>
@@ -695,6 +711,43 @@
             <!-- VIEW: PROJECTS -->
             <section id="projects" class="section-view">
                 <div class="grid-projects">
+
+                    <!-- P0 -->
+                    <div class="card project-card">
+                        <div class="card-corner card-tl"></div>
+                        <div class="card-corner card-tr"></div>
+                        <div class="card-corner card-bl"></div>
+                        <div class="card-corner card-br"></div>
+                        <div class="project-header">
+                            <h3 class="project-title">FINCAPES Flood &amp; Fire Early Warning System</h3>
+                            <span class="project-status">IOT PLATFORM</span>
+                        </div>
+                        <div class="project-date">[MAY 2026 – AUG 2026]</div>
+                        <a class="project-link" href="https://github.com/fincapesindonesia/FINCAPES" target="_blank"
+                            rel="noopener noreferrer">github.com/fincapesindonesia/FINCAPES</a>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Built a production IoT early-warning platform (Next.js, FastAPI, PostgreSQL) for
+                                    flood and forest-fire monitoring across Pontianak, Samarinda, Jambi, and Lampung.
+                                </li>
+                                <li>Implemented telemetry ingestion, device authentication, heartbeats, and remote
+                                    command dispatch, plus a Leaflet GIS dashboard with JWT RBAC (Admin, City Operator,
+                                    Station Operator).</li>
+                                <li>Delivered analytics, flagged-alert workflows, EN/ID i18n, and Docker Compose
+                                    deployment; supported field visits for community IoT siting in Jambi and Samarinda.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">NEXT.JS</span>
+                            <span class="tech-tag">FASTAPI</span>
+                            <span class="tech-tag">POSTGRESQL</span>
+                            <span class="tech-tag">PRISMA</span>
+                            <span class="tech-tag">LEAFLET</span>
+                            <span class="tech-tag">DOCKER</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
 
                     <!-- P1 -->
                     <div class="card project-card">
@@ -845,6 +898,31 @@
                         </div>
                     </div>
 
+                    <!-- Exp FINCAPES -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">MAY 2026 – AUG 2026</div>
+                        <div class="timeline-title">Web Application Developer — Forest Fire Early Warning System</div>
+                        <div class="timeline-company">FINCAPES / IPB University (University of Waterloo Co-op)</div>
+                        <div class="card">
+                            <div class="card-corner card-tl"></div>
+                            <div class="card-corner card-bl"></div>
+                            <div class="project-desc" style="margin:0">
+                                <ul>
+                                    <li>Architected and shipped core services of the FINCAPES Flood and Fire Early
+                                        Warning System, a full-stack IoT platform (Next.js, FastAPI, PostgreSQL)
+                                        deployed for Indonesian field sites.</li>
+                                    <li>Designed relational schemas and REST pipelines for real-time sensor telemetry,
+                                        device authentication, heartbeats, threshold alerts, and remote command
+                                        dispatch.</li>
+                                    <li>Built operator dashboards with Leaflet GIS mapping, role-based access (Admin,
+                                        City Operator, Station Operator), analytics, and bilingual EN/ID support.</li>
+                                    <li>Containerized the stack with Docker Compose and supported IoT deployment field
+                                        visits in Jambi and Samarinda.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Exp New 1 -->
                     <div class="timeline-item">
@@ -935,8 +1013,10 @@
                         <div class="skill-title">FRAMEWORKS & LIBS</div>
                         <div class="skill-list">
                             <span class="skill-item">REACT</span>
+                            <span class="skill-item">NEXT.JS</span>
                             <span class="skill-item">NODE.JS</span>
                             <span class="skill-item">EXPRESS.JS</span>
+                            <span class="skill-item">FASTAPI</span>
                             <span class="skill-item">PYTORCH</span>
                             <span class="skill-item">SCIKIT-LEARN</span>
                             <span class="skill-item">PANDAS</span>
@@ -951,6 +1031,9 @@
                             <span class="skill-item">WEBSOCKETS</span>
                             <span class="skill-item">SQL</span>
                             <span class="skill-item">MYSQL</span>
+                            <span class="skill-item">POSTGRESQL</span>
+                            <span class="skill-item">PRISMA</span>
+                            <span class="skill-item">LEAFLET</span>
                             <span class="skill-item">DOCKER</span>
                             <span class="skill-item">LINUX (UBUNTU)</span>
                             <span class="skill-item">GIT</span>
